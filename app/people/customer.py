@@ -1,4 +1,7 @@
-class Customer(object):
-    def __init__(self, first_name, last_name):
-        self.first_name = first_name
-        self.last_name = last_name
+class Customer:
+    def __init__(self, name: str, food: str) -> None:
+        self.name = name
+        self.food = food
+
+    def watch_movie(self, movie: str) -> None:
+        print (f'{self.name} is watching "{movie}".')

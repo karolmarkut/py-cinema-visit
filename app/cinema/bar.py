@@ -1,3 +1,6 @@
-class CinemaBar()
-    def sell_product (product: string, customer.customer)
-    return f"product {product} został sprzedany {customer.customer}"
+from app.people.customer import Customer
+
+class CinemaBar:
+    @staticmethod
+    def sell_product (product: str, customer: Customer)-> None:
+        print(f"Cinema bar sold {product} to {customer.name}.")
